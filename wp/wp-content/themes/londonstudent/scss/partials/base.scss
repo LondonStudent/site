@@ -1,0 +1,63 @@
+* {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@each $dir in right, left {
+	.float-#{$dir} {
+		float: $dir;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+body {
+	// background: #f6f6f6;
+	background: #fafafa;
+
+	padding: $navbarHeight 0 0 0;
+}
+
+.content {
+	padding-top: 3rem;
+	// @include span-columns(10);
+}
+
+.icon {
+	display: block;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 100%;
+	color: rgba(0,0,0,0);
+	&--twitter {
+		background: #00aced;
+	}
+}
+
+.icon-p {
+	// display: block;
+	// width: 2.5rem;
+	// height: 2.5rem;
+	// color: rgba(0,0,0,0);
+	&:before {
+		content: 'i';
+		display: block;
+		float: left;
+		height: 1.3rem;
+		width: 1.3rem;
+		margin: .2rem .3rem 0 0;
+		border-radius: 100%;
+		background: currentColor;
+	}
+	&--twitter {
+		&:before {
+			color: #00aced;
+		}
+	}
+}

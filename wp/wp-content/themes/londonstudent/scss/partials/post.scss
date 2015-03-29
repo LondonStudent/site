@@ -1,0 +1,165 @@
+$article-padding: 4rem;
+// $article-padding: 3rem;
+
+%card {
+	// box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.05);
+	margin-bottom: 2rem;
+	// background: #fff;
+	// padding: $article-padding/4 $article-padding/2;
+	padding: $article-padding/2;
+	@include breakpoint(medium) {
+		@include outer-container(90%);
+		// padding: $article-padding/2 $article-padding;
+		padding: $article-padding/2 $article-padding;
+	}
+}
+.post {
+	font-size: 1.1rem;
+	// margin-top: 3rem;
+	// margin-left: 4rem;
+	// box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.05);
+	margin-bottom: 2rem;
+	// background: #fff;
+
+	@include breakpoint(medium) {
+		@include outer-container(90%);
+	}
+
+	&__image {
+		// margin-bottom: 3rem;
+	}
+
+	&__header,
+	&__content {
+		// Set max width, too many wpl otherwise
+		padding: 0 $article-padding/2;
+		@include breakpoint(medium) {
+			padding: 0 $article-padding;
+		}
+	}
+
+	&__header {
+		padding-top: 3rem;
+	}
+
+	&__title {
+		font-size: 1.7em;
+		margin-bottom: 0.3em;
+	}
+
+	&__meta {
+		color: #888;
+		a {
+			color: inherit;
+			&:hover {
+				color: $ls-red;
+			}
+		}
+	}
+
+	&__content {
+		@include breakpoint(medium) {
+			// padding: 0 8rem;
+			padding-bottom: 3rem;
+		}
+
+		p {
+			// padding: 0 8rem;
+		}
+
+		p:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.quote {
+	margin-bottom: 1rem;
+	font-size: 1.1em;
+	&--left {
+		// padding: 0 28rem 0 0;
+		padding: 1rem 28rem 0 0;
+	}
+}
+
+.related {
+	@extend %card;
+
+	&__header {
+		text-align: center;
+		font-size: 1.5em;
+	}
+}
+
+.author-card {
+	@extend %card;
+	@include row;
+	&__img {
+		@include span-columns(3);
+		@include med-span(2);
+		border-radius: 100%;
+	}
+
+	&__info {
+		@include span-columns(9);
+		@include med-span(10);
+	}
+
+	&__name {
+		@include clearfix;
+		font-size: 1.4em;
+		font-weight: bold;
+	}
+
+	&__bio {
+		@include fill-parent;
+		@include med-span(7);
+		@include large-span(6);
+		color: #888;
+	}
+
+	&__links {
+		@include fill-parent;
+		@include med-span(4);
+		@include large-span(5);
+		@include breakpoint(medium) {
+			@include shift(1);
+		}
+	}
+
+	&__link {
+		margin-bottom: .6em;
+		a {
+			color: #888;
+		}
+	}
+}
+
+.article-grid {
+	@include row;
+	&__item {
+
+		@include med-span(4);
+		// @include fill-parent;
+		// border: 1px solid red;
+		margin-bottom: 1rem;
+		@include breakpoint(medium) {
+			text-align: center;
+		}
+	}
+
+	&__link {
+		@include row;
+	}
+
+	&__img {
+		@include span-columns(6);
+		@include med-span(12);
+	}
+
+	&__text {
+		@include span-columns(6);
+		@include med-span(12);
+		padding: 0.5rem 0;
+	}
+}

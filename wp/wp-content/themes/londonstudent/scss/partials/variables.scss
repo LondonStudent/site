@@ -1,0 +1,37 @@
+// Colors
+$color: white;
+$ls-red: #d2232a;
+$ls-red-lighter: lighten($ls-red, 10%);
+
+$navbarHeight: 4rem;
+$sidebar-width: 200px;
+
+// Z Index
+$zindex: (
+	base
+	, navbar
+	, modal
+);
+
+@mixin z-index($elem) {
+	z-index: index($zindex, $elem) * 10;
+}
+
+// Grid helpers
+@mixin med-span($span) {
+	@include breakpoint(medium) {
+		@include span-columns($span);
+	}
+}
+
+@mixin large-span($span) {
+	@include breakpoint(large) {
+		@include span-columns($span);
+	}
+}
+
+@mixin xlarge-span($span) {
+	@include breakpoint(xlarge) {
+		@include span-columns($span);
+	}
+}
