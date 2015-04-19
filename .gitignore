@@ -29,7 +29,7 @@ app/public/css/style.css
 .vagrant
 
 *.log
-.htaccess
+# .htaccess
 sitemap.xml
 sitemap.xml.gz
 # wp-config.php
