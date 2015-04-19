@@ -10,7 +10,7 @@ var theme = './wp/wp-content/themes/londonstudent/'
 gulp.task('serve', ['sass'], function() {
     if (util.env.sync) {
         browserSync({
-            proxy: 'londonstudent.dev'
+            proxy: 'londonstudent.local'
         })
     }
 
