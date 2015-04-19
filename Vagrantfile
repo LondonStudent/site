@@ -8,5 +8,5 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", path: "install.sh"
   config.vm.synced_folder "./wp", "/var/www"
   config.vm.synced_folder "./conf", "/conf"
-  config.vm.synced_folder "/users/r/Dropbox/LondonStudent/site/", "/db"
+  config.vm.synced_folder "~/Dropbox/LondonStudent/site/", "/db"
 end
