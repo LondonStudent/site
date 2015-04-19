@@ -21,8 +21,8 @@ curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 
 sudo cp /conf/londonstudent.conf /etc/apache2/sites-available/
-sudo service apache2 restart
 
-# create db
-# mysql --user=root --password=root $LSDB < "$LSDROPBOX/site/londonstudent.sql"
-# move wp-config, edit
+echo "CREATE DATABASE wordpress" | mysql --user=root --password=root
+mysql --user=root --password=root wordpress < "/db/londonstudent.sql"
+
+sudo service apache2 restart
