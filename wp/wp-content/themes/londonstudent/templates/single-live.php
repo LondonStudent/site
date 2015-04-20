@@ -24,17 +24,22 @@
 		<?php endif; ?>
 	</ul>
 	<?php if( $repeater ): ?>
+		<br>
 		<?php foreach( $repeater as $i => $row ) { ?>
 			<?php
 				$body = $row['body'];
 				$timestamp = $row['time'];
 				$time = date('g:ia', $timestamp);
+				$url = 's-' . $timestamp;
 				$author = $row['author'];
 				$authorName = get_author_fullname($author['ID']);
 			?>
-			<section class="liveblog__section" id="s-<?php echo $timestamp; ?>">
+			<section class="liveblog__section">
+				<a class="anchor-offset" id="s-<?php echo $timestamp; ?>"></a>
 				<?php echo $time; ?> - <?php echo $authorName; ?>
 				<?php echo $body; ?>
+				<br>
+				<a href="#<?php echo $url; ?>">Link</a>
 			</section>
 			<hr>
 		<?php } ?>

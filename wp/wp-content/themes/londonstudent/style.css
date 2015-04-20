@@ -225,6 +225,12 @@ body {
 .icon-p--twitter:before {
   color: #00aced; }
 
+.anchor-offset {
+  display: block;
+  position: relative;
+  top: -5rem;
+  visibility: hidden; }
+
 .navbar {
   display: block;
   position: fixed;

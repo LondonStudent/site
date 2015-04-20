@@ -61,3 +61,10 @@ body {
 		}
 	}
 }
+
+.anchor-offset {
+	display: block;
+	position: relative;
+	top: -5rem;
+	visibility: hidden;
+}
