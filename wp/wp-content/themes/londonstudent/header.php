@@ -16,14 +16,14 @@
             <path class="path1" d="M64 192h896v192h-896zM64 448h896v192h-896zM64 704h896v192h-896z"></path>
         </symbol>
     </svg>
-    
+
 <?php //wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 	<nav class="navbar">
 		<div class="navbar__left">
 			<a href="" id="nav-toggle"><svg class="icon icon-twitter"><use xlink:href="#icon-menu"></use></svg></a>
 		</div>
 
-		<a href="/" class="navbar__logo">    
+		<a href="/" class="navbar__logo">
         <img src="http://i.imgur.com/CvS7W3g.png">
         </a>
 
@@ -36,16 +36,15 @@
 <!-- <div id="site-canvas" class="site-canvas site-canvas--active"> -->
 	<div class="offcanvas">
 		<ul class="sidebar__feed">
-			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			<?php $postFeed = new WP_Query('post_type=post'); ?>
+			<?php while ($postFeed->have_posts()) : $postFeed->the_post(); ?>
 				<li class="sidebar__feed__item">
 					<a class="sidebar__feed__link" href="<?php the_permalink(); ?>">
 						<span class="sidebar__feed__date"><?php the_time('F jS, Y'); ?></span>
 						<span class="sidebar__feed__title"><?php the_title(); ?></span>
 					</a>
 				</li>
-			<?php endwhile; else : ?>
-			<?php endif; ?>
-
+			<?php endwhile; ?>
 		</ul>
 	</div>
 	<div class="content">

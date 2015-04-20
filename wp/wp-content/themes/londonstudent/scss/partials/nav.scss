@@ -19,7 +19,7 @@
             font-size: 1.8em;
         }
 	}
-    
+
     &__left {
         padding: 10px;
         font-size: 1em;
@@ -40,7 +40,7 @@
             margin: 0 auto;
             padding-top: .7rem;
             @include breakpoint(medium) {
-                padding-top: .5rem;   
+                padding-top: .5rem;
             }
         }
 	}
@@ -82,7 +82,8 @@
 		transform: translateX($sidebar-width);
 		transform: translate3d($sidebar-width, 0, 0);
 		@include breakpoint(large) {
-			transform: none;
+			transform: translateX(-$sidebar-width);
+			transform: translate3d(-$sidebar-width, 0, 0);
 		}
 	}
 }
@@ -91,16 +92,16 @@
 .offcanvas {
 	width: $sidebar-width;
 	left: -$sidebar-width;
-	height: 100%;
+	height: 100vh;
 	position: absolute;
 	top: 0;
-	// background: $ls-red;
+	padding-top: 4rem;
 	background: white;
 	box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.05);
+	overflow-y: scroll;
 	@include breakpoint(large) {
-		@include fill-parent;
-		position: static;
-		height: auto;
+		left: 0;
+		position: fixed;
 		flex: 0 0 15%;
 	}
 }

@@ -22,8 +22,14 @@ $article-padding: 4rem;
 	// background: #fff;
 
 	@include breakpoint(medium) {
-		@include outer-container(90%);
+		// @include outer-container(90%);
+		.site-canvas--active & {
+			// @include outer-container(75%);
+			// transform: translateX($sidebar-width);
+			// transform: translate3d($sidebar-width, 0, 0);
+		}
 	}
+
 
 	&__image {
 		// margin-bottom: 3rem;
