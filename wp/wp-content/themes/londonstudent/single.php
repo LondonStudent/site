@@ -21,8 +21,13 @@
 		<img src="<?php echo $image[0]; ?>" >
 	</div>
 
-	<?php //include(locate_template('templates/single-live.php')); ?>
-	<?php include(locate_template('templates/single.php')); ?>
+	<?php
+		if (in_category('Liveblog')) {
+			include(locate_template('templates/single-live.php'));
+		} else {
+			include(locate_template('templates/single.php'));
+		};
+	?>
 
 </article>
 
