@@ -40,7 +40,6 @@ body {
 		}
 		@include breakpoint(large) {
 			padding-left: 0;
-			border: 1px solid red;
 			transform: translateX($sidebar-width);
 			transform: translate3d($sidebar-width, 0, 0);
 		}

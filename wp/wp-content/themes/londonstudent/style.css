@@ -229,7 +229,6 @@ body {
   @media only screen and (min-width:64.063em) {
     .site-canvas--active .content {
       padding-left: 0;
-      border: 1px solid red;
       transform: translateX(200px);
       transform: translate3d(200px, 0, 0); } }
 
