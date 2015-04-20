@@ -11,59 +11,18 @@
 	$fullName = get_author_fullname($authorID);
 	$email = get_the_author_meta('user_email');
 	$avatar = get_avatar_url(get_avatar( $email, '100', 'http://placehold.it/100' ));
+	$url2 = $fullName;
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="post__image">
-		<?php //the_post_thumbnail('full'); ?>
 		<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
 		<img src="<?php echo $image[0]; ?>" >
 	</div>
-	<div class="post__header">
-		<h1 class="post__title"><?php the_title(); ?></h1>
-		<div class="post__meta">
-			<p><?php the_time('F jS, Y'); ?> by <a href="<?php echo $url; ?>"><?php echo $fullName ?></a></p>
-		</div>
-	</div>
 
-	<div class="post__content">
-
-		<?php
-			$repeater = get_field('liveblog_content');
-			$order = array();
-			foreach( $repeater as $i => $row ) {
-				$order[ $i ] = $row['time'];
-			}
-			array_multisort( $order, SORT_DESC, $repeater );
-		?>
-		<ul>
-			<?php if( $repeater ): ?>
-			<?php foreach( $repeater as $i => $row ) { ?>
-				<?php $url = 's-' . $row['time']; ?>
-				<?php $time = date('g:ia', $timestamp); ?>
-				<li><a href="#<?php echo $url; ?>"><?php echo $time; ?></a></li>
-			<?php } ?>
-			<?php endif; ?>
-		</ul>
-		<?php if( $repeater ): ?>
-			<?php foreach( $repeater as $i => $row ) { ?>
-				<?php
-					$body = $row['body'];
-					$timestamp = $row['time'];
-					$time = date('g:ia', $timestamp);
-					$author = $row['author'];
-					$authorName = get_author_fullname($author['ID']);
-				?>
-				<section class="liveblog__section" id="s-<?php echo $timestamp; ?>">
-					<?php echo $time; ?> - <?php echo $authorName; ?>
-					<?php echo $body; ?>
-				</section>
-				<hr>
-			<?php } ?>
-		<?php endif; ?>
-		<?php the_content(); ?>
-	</div>
+	<?php //include(locate_template('templates/single-live.php')); ?>
+	<?php include(locate_template('templates/single.php')); ?>
 
 </article>
 
