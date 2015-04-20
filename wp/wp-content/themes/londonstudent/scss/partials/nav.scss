@@ -12,16 +12,42 @@
 
 	&__left,
 	&__right {
-		@include span-columns(4)
+		@include span-columns(3);
+        padding: 10px;
+        font-size: 1em;
+        @include breakpoint(medium) {
+            font-size: 1.8em;
+        }
 	}
+    
+    &__left {
+        padding: 10px;
+        font-size: 1em;
+        @include breakpoint(medium) {
+            font-size: 1.8em;
+        }
+        :hover {
+            color: $ls-red;
+        }
+    }
 
 	&__logo {
-		@include span-columns(4);
-		text-align: center;
+		@include span-columns(6);
+        img {
+            display: block;
+            width: 100%;
+            max-width: 14rem;
+            margin: 0 auto;
+            padding-top: .7rem;
+            @include breakpoint(medium) {
+                padding-top: .5rem;   
+            }
+        }
 	}
 
 	&__right {
 		text-align: right;
+        margin-top: 5px;
 	}
 
 	a {

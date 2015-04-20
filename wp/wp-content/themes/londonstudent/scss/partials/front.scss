@@ -1,0 +1,36 @@
+section.article-row {
+    @include outer-container;
+    ul.headline {
+        font-size: 3em;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    hr {
+        color: $ls-red;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    ul.front-left, ul.front-middle, ul.front-right {
+        @include span-columns(4);
+        text-align: center;
+        img {
+            width: 100%;
+            height: auto;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+    ul.front-left {
+        padding-left: 15px;
+        padding-right: 15px;
+        border-right: thin solid $ls-red;
+    }
+    
+    ul.front-right {
+        padding-left: 15px;
+        padding-right: 15px;
+        border-left: thin solid $ls-red;
+    }
+    
+}
