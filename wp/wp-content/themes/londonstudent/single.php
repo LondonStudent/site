@@ -31,13 +31,12 @@
 
 </article>
 
-<section class="author-card">
+<!-- <section class="author-card">
 	<img class="author-card__img" src="<?php echo $avatar ?>">
 	<div class="author-card__info">
 		<span class="author-card__name"><?php echo $fullName ?></span>
 		<p class="author-card__bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia debitis incidunt excepturi, voluptatem.</p>
 		<ul class="author-card__links">
-			<!-- <li class="author-card__social__item"><a href="" class="icon icon--twitter">T</a></li> -->
 			<li class="author-card__link"><a class="icon-p icon-p--web" href="http://rossmackay.co">rossmackay.co</a></li>
 			<li class="author-card__link"><a class="icon-p icon-p--twitter" href="http://twitter.com/r_mcky">@r_mcky</a></li>
 		</ul>
@@ -85,7 +84,7 @@
 			Article 3
 		</li>
 	</ul>
-</section>
+</section> -->
 
 
 

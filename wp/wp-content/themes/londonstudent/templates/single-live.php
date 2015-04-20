@@ -36,10 +36,8 @@
 			?>
 			<section class="liveblog__section">
 				<a class="anchor-offset" id="s-<?php echo $timestamp; ?>"></a>
-				<?php echo $time; ?> - <?php echo $authorName; ?>
+				<span class="liveblog__section__time"><?php echo $time; ?></span> - <span class="liveblog__section__author"><?php echo $authorName; ?></span> - <a href="#<?php echo $url; ?>">Permalink</a>
 				<?php echo $body; ?>
-				<br>
-				<a href="#<?php echo $url; ?>">Link</a>
 			</section>
 			<hr>
 		<?php } ?>
