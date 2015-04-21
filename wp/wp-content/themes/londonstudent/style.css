@@ -216,8 +216,7 @@ body {
   @media only screen and (min-width:64.063em) {
     .content {
       padding-left: 15%;
-      transition: 300ms ease all;
-      border: 1px solid red; } }
+      transition: 300ms ease all; } }
 
 .icon {
   display: block;
