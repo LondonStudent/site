@@ -68,22 +68,22 @@
 	width: 100%;
 	height: 100%;
 	position: relative;
-	transform: translateX(0);
-	transform: translate3d(0, 0, 0);
+	// transform: translateX(0);
+	// transform: translate3d(0, 0, 0);
 	backface-visibility: hidden;
 	transition: 300ms ease all;
 	@include breakpoint(large) {
 		position: static;
-		transform: none;
+		// transform: none;
 		display: flex;
 	}
 
 	&--active {
-		transform: translateX($sidebar-width);
-		transform: translate3d($sidebar-width, 0, 0);
+		// transform: translateX($sidebar-width);
+		// transform: translate3d($sidebar-width, 0, 0);
 		@include breakpoint(large) {
-			transform: translateX(-$sidebar-width);
-			transform: translate3d(-$sidebar-width, 0, 0);
+			// transform: translateX(-$sidebar-width);
+			// transform: translate3d(-$sidebar-width, 0, 0);
 		}
 	}
 }
@@ -93,16 +93,21 @@
 	width: $sidebar-width;
 	left: -$sidebar-width;
 	height: 100vh;
-	position: absolute;
+	// position: absolute;
+	position: fixed;
 	top: 0;
 	padding-top: 4rem;
 	background: white;
 	box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.05);
 	overflow-y: scroll;
+	transition: 300ms ease left;
 	@include breakpoint(large) {
 		left: 0;
 		position: fixed;
 		flex: 0 0 15%;
+	}
+	.site-canvas--active & {
+		left: 0;
 	}
 }
 

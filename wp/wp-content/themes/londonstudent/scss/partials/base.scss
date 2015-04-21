@@ -32,16 +32,17 @@ body {
 	@include breakpoint(large) {
 		padding-left: 15%;
 		transition: 300ms ease all;
+		border: 1px solid red;
 	}
 
 	.site-canvas--active & {
 		@include breakpoint(medium) {
-			@include outer-container(80%);
+			// @include outer-container(80%);
 		}
 		@include breakpoint(large) {
-			padding-left: 0;
-			transform: translateX($sidebar-width);
-			transform: translate3d($sidebar-width, 0, 0);
+			// padding-left: 0;
+			// transform: translateX($sidebar-width);
+			// transform: translate3d($sidebar-width, 0, 0);
 		}
 	}
 }
