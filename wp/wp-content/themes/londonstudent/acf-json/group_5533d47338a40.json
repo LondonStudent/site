@@ -1,0 +1,75 @@
+{
+    "key": "group_5533d47338a40",
+    "title": "Live blog",
+    "fields": [
+        {
+            "key": "field_5533d53d89e59",
+            "label": "Content",
+            "name": "liveblog_content",
+            "prefix": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "min": "",
+            "max": "",
+            "layout": "row",
+            "button_label": "Add section",
+            "sub_fields": [
+                {
+                    "key": "field_5533d6589286c",
+                    "label": "Time",
+                    "name": "time",
+                    "prefix": "",
+                    "type": "date_time_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "column_width": "",
+                    "show_date": "false",
+                    "date_format": "m\/d\/y",
+                    "time_format": "h:mm tt",
+                    "show_week_number": "false",
+                    "picker": "slider",
+                    "save_as_timestamp": "true",
+                    "get_as_timestamp": "true"
+                },
+                {
+                    "key": "field_5533d55089e5a",
+                    "label": "Body",
+                    "name": "body",
+                    "prefix": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "column_width": "",
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": "wpautop",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_category",
+                "operator": "==",
+                "value": "category:liveblog"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ]
+}
