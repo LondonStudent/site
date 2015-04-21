@@ -70,7 +70,12 @@ function get_author_fullname($userID) {
 	$first = get_the_author_meta('first_name', $userID);
 	$last = get_the_author_meta('last_name', $userID);
 	$full = $first . ' ' . $last;
-	return $full;
+	$nickname = get_the_author_meta('nickname', $userID);
+	if ($first && $last) {
+		return $full;
+	} else {
+		return $nickname;
+	}
 }
 
 function the_author_fullname($userID) {
