@@ -91,3 +91,10 @@ function get_avatar_url($get_avatar){
  * Load shortcodes
  */
 require get_template_directory() . '/functions/shortcodes.php';
+
+/**
+ * Image attachment attribution
+ */
+require get_template_directory() . '/functions/attribution.php';
+
+?>

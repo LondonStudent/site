@@ -2,6 +2,9 @@
 $color: white;
 $ls-red: #d2232a;
 $ls-red-lighter: lighten($ls-red, 10%);
+$ls-red-darker: darken($ls-red, 10%);
+
+$light-grey: #888;
 
 $navbarHeight: 4rem;
 $sidebar-width: 200px;

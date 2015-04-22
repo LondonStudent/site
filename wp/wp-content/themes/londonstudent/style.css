@@ -245,6 +245,10 @@ body {
   top: -5rem;
   visibility: hidden; }
 
+.page-404__header {
+  text-align: center;
+  font-size: 5rem; }
+
 .navbar {
   display: block;
   position: fixed;
@@ -410,6 +414,15 @@ section.article-row {
   margin-bottom: 2rem; }
   .post__image {
     margin-bottom: 3rem; }
+    .post__image__attribution {
+      color: #888;
+      font-size: .8em;
+      text-align: right;
+      font-style: italic; }
+      .post__image__attribution a {
+        color: inherit; }
+        .post__image__attribution a:hover, .post__image__attribution a:focus {
+          color: #a61c21; }
   .post__title, .post__meta, .post__content {
     padding: 0 2rem; }
     @media only screen and (min-width:40.063em) {
@@ -423,7 +436,7 @@ section.article-row {
     .post__meta a {
       color: inherit; }
       .post__meta a:hover {
-        color: #d2232a; }
+        color: #a61c21; }
   @media only screen and (min-width:40.063em) {
     .post__content {
       padding-bottom: 3rem; } }

@@ -22,6 +22,20 @@ $article-padding: 4rem;
 	// background: #fff;
 	&__image {
 		margin-bottom: 3rem;
+
+		&__attribution {
+			color: $light-grey;
+			font-size: .8em;
+			text-align: right;
+			font-style: italic;
+
+			a {
+				color: inherit;
+				&:hover, &:focus {
+					color: $ls-red-darker;
+				}
+			}
+		}
 	}
 
 	&__title,
@@ -40,11 +54,11 @@ $article-padding: 4rem;
 	}
 
 	&__meta {
-		color: #888;
+		color: $light-grey;
 		a {
 			color: inherit;
 			&:hover {
-				color: $ls-red;
+				color: $ls-red-darker;
 			}
 		}
 	}
