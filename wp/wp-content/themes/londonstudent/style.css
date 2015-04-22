@@ -582,3 +582,9 @@ section.article-row {
         width: 100%; }
         .article-grid__text:last-child {
           margin-right: 0; } }
+
+.liveblog__times__text {
+  margin-right: .5rem; }
+.liveblog__times__select {
+  display: inline;
+  margin-bottom: 0; }

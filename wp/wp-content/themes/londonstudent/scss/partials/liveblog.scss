@@ -1,0 +1,12 @@
+.liveblog {
+	&__times {
+		&__text {
+			margin-right: .5rem;
+		}
+
+		&__select {
+			display: inline;
+			margin-bottom: 0;
+		}
+	}
+}

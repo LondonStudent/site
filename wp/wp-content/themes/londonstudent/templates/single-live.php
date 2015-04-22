@@ -14,15 +14,18 @@
 		}
 		array_multisort( $order, SORT_DESC, $repeater );
 	?>
-	<ul>
-		<?php if( $repeater ): ?>
-		<?php foreach( $repeater as $i => $row ) { ?>
-			<?php $url = 's-' . $row['time']; ?>
-			<?php $time = date('g:ia', $row['time']); ?>
-			<li><a href="#<?php echo $url; ?>"><?php echo $time; ?></a></li>
-		<?php } ?>
-		<?php endif; ?>
-	</ul>
+	<div class="liveblog__times">
+		<span class="liveblog__times__text">Jump to a time:</span>
+		<select class="liveblog__times__select" id="liveblog__times__select">
+			<?php if( $repeater ): ?>
+			<?php foreach( $repeater as $i => $row ) { ?>
+				<?php $url = 's-' . $row['time']; ?>
+				<?php $time = date('g:ia', $row['time']); ?>
+				<option value="<?php echo $url; ?>"><?php echo $time; ?></a></option>
+			<?php } ?>
+			<?php endif; ?>
+		</select>
+	</div>
 	<?php if( $repeater ): ?>
 		<br>
 		<?php foreach( $repeater as $i => $row ) { ?>
@@ -36,7 +39,7 @@
 			?>
 			<section class="liveblog__section">
 				<a class="anchor-offset" id="s-<?php echo $timestamp; ?>"></a>
-				<a class="liveblog__section__time" href="#<?php echo $url; ?>"><?php echo $time; ?></a> - <span class="liveblog__section__author"><?php echo $authorName; ?></span>
+				<a class="liveblog__section__time" href="#<?php echo $url; ?>"><?php echo $time; ?></a><!-- - <span class="liveblog__section__author"><?php echo $authorName; ?></span>-->
 				<?php echo $body; ?>
 			</section>
 			<hr>
@@ -44,3 +47,11 @@
 	<?php endif; ?>
 	<?php the_content(); ?>
 </div>
+
+<script>
+	var timeSelect = document.getElementById('liveblog__times__select')
+	timeSelect.onchange = function(event) {
+		var value = this.options[this.selectedIndex].value
+		location.hash = value
+	}
+</script>
