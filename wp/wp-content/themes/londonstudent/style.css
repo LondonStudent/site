@@ -343,6 +343,8 @@ body {
   padding: .8rem .5rem;
   font-size: 0.9em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+  .sidebar__feed__item hr {
+    display: none; }
 .sidebar__feed__link {
   color: inherit; }
 .sidebar__feed__date {
@@ -588,3 +590,5 @@ section.article-row {
 .liveblog__times__select {
   display: inline;
   margin-bottom: 0; }
+.liveblog__section--tweet iframe {
+  margin: 0 auto 1rem auto !important; }
