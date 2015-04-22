@@ -414,6 +414,8 @@ section.article-row {
   margin-bottom: 2rem; }
   .post__image {
     margin-bottom: 3rem; }
+    .post__image img {
+      width: 100%; }
     .post__image__attribution {
       color: #888;
       font-size: .8em;
