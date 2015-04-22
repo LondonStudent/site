@@ -66,15 +66,7 @@
                     "type": "textarea",
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": [
-                        {
-                            "rule_0": {
-                                "field": "field_5537bcbc25807",
-                                "operator": "==",
-                                "value": "text"
-                            }
-                        }
-                    ],
+                    "conditional_logic": 0,
                     "column_width": "",
                     "default_value": "",
                     "placeholder": "",
@@ -145,18 +137,6 @@
                     "library": "all"
                 }
             ]
-        },
-        {
-            "key": "field_5537a70a5623f",
-            "label": "Tweet",
-            "name": "tweet",
-            "prefix": "",
-            "type": "tweet",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "font_size": 14,
-            "url": ""
         }
     ],
     "location": [
