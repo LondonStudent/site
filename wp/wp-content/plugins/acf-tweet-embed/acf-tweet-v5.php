@@ -133,7 +133,7 @@ class acf_field_tweet extends acf_field {
 		*/
 
 		?>
-		<input type="text" name="<?php echo esc_attr($field['name']) ?>" value="<?php echo esc_attr($field['value']) ?>" style="font-size:<?php echo $field['font_size'] ?>px;" />
+		<input type="text" name="<?php echo esc_attr($field['name']) ?>" value="<?php echo esc_attr($field['value']) ?>" />
 		<?php
 	}
 
@@ -373,10 +373,10 @@ class acf_field_tweet extends acf_field {
 require_once('TwitterAPIExchange.php');
 
 		$settings = array(
-			'oauth_access_token' => "382458751-FP26M068G3tdy3kdRmbyAOhp1Kf1QfOkogLtapBn",
-			'oauth_access_token_secret' => "EKQx8FNkziQW1QuvX7PCsQwrRpfHsBqiKMvSnHpeIO2qm",
-			'consumer_key' => "awB7zJwwHl6sM4f049XEIesFA",
-			'consumer_secret' => "5sI2dzKGjgwyAEDv9KFDGiJaTPwfdiwNj3r2SNVKCeDQqPPxAJ"
+			'oauth_access_token' => $_ENV['TWITTER_OAUTH_TOKEN'],
+			'oauth_access_token_secret' => $_ENV['TWITTER_OAUTH_SECRET'],
+			'consumer_key' => $_ENV['TWITTER_CKEY'],
+			'consumer_secret' => $_ENV['TWITTER_CSECRET']
 		);
 
 		if( empty($value) ) {
