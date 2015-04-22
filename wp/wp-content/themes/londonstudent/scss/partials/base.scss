@@ -27,6 +27,7 @@ body {
 .content {
 	padding-top: 3rem;
 	@include breakpoint(medium) {
+		width: 90%;
 		@include outer-container(90%);
 	}
 	@include breakpoint(large) {

@@ -9,4 +9,12 @@
 			margin-bottom: 0;
 		}
 	}
+
+	&__section {
+		&--tweet {
+			iframe {
+				margin: 0 auto 1rem auto!important; //override twitter api styling
+			}
+		}
+	}
 }

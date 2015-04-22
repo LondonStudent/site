@@ -21,20 +21,17 @@ $article-padding: 4rem;
 	margin-bottom: 2rem;
 	// background: #fff;
 	&__image {
-		// margin-bottom: 3rem;
+		margin-bottom: 3rem;
 	}
 
-	&__header,
+	&__title,
+	&__meta,
 	&__content {
 		// Set max width, too many wpl otherwise
 		padding: 0 $article-padding/2;
 		@include breakpoint(medium) {
 			padding: 0 $article-padding;
 		}
-	}
-
-	&__header {
-		padding-top: 3rem;
 	}
 
 	&__title {

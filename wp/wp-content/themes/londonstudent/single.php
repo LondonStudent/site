@@ -14,11 +14,6 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div class="post__image">
-		<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-		<img src="<?php echo $image[0]; ?>" >
-	</div>
-
 	<?php
 		if (in_category('Liveblog')) {
 			include(locate_template('templates/single-live.php'));

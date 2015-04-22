@@ -206,6 +206,7 @@ body {
   padding-top: 3rem; }
   @media only screen and (min-width:40.063em) {
     .content {
+      width: 90%;
       max-width: 90%;
       margin-left: auto;
       margin-right: auto; }
@@ -407,13 +408,13 @@ section.article-row {
 .post {
   font-size: 1.1rem;
   margin-bottom: 2rem; }
-  .post__header, .post__content {
+  .post__image {
+    margin-bottom: 3rem; }
+  .post__title, .post__meta, .post__content {
     padding: 0 2rem; }
     @media only screen and (min-width:40.063em) {
-      .post__header, .post__content {
+      .post__title, .post__meta, .post__content {
         padding: 0 4rem; } }
-  .post__header {
-    padding-top: 3rem; }
   .post__title {
     font-size: 1.7em;
     margin-bottom: 0.3em; }
