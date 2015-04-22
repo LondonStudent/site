@@ -35,6 +35,30 @@
                     "get_as_timestamp": "true"
                 },
                 {
+                    "key": "field_5537bcbc25807",
+                    "label": "Type",
+                    "name": "type",
+                    "prefix": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "column_width": "",
+                    "choices": {
+                        "text": "Text",
+                        "image": "Image",
+                        "tweet": "Tweet"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "disabled": 0,
+                    "readonly": 0
+                },
+                {
                     "key": "field_5533d55089e5a",
                     "label": "Body",
                     "name": "body",
@@ -42,7 +66,15 @@
                     "type": "textarea",
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": 0,
+                    "conditional_logic": [
+                        {
+                            "rule_0": {
+                                "field": "field_5537bcbc25807",
+                                "operator": "==",
+                                "value": "text"
+                            }
+                        }
+                    ],
                     "column_width": "",
                     "default_value": "",
                     "placeholder": "",
@@ -51,8 +83,80 @@
                     "new_lines": "wpautop",
                     "readonly": 0,
                     "disabled": 0
+                },
+                {
+                    "key": "field_5537bd3a68281",
+                    "label": "Tweets",
+                    "name": "tweets",
+                    "prefix": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        {
+                            "rule_0": {
+                                "field": "field_5537bcbc25807",
+                                "operator": "==",
+                                "value": "tweet"
+                            }
+                        }
+                    ],
+                    "column_width": "",
+                    "min": "",
+                    "max": "",
+                    "layout": "row",
+                    "button_label": "Add Tweet",
+                    "sub_fields": [
+                        {
+                            "key": "field_5537bd8068283",
+                            "label": "tweet",
+                            "name": "tweet",
+                            "prefix": "",
+                            "type": "tweet",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "column_width": "",
+                            "url": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_5537bd6068282",
+                    "label": "Images",
+                    "name": "images",
+                    "prefix": "",
+                    "type": "gallery",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        {
+                            "rule_0": {
+                                "field": "field_5537bcbc25807",
+                                "operator": "==",
+                                "value": "image"
+                            }
+                        }
+                    ],
+                    "column_width": "",
+                    "min": 1,
+                    "max": "",
+                    "preview_size": "thumbnail",
+                    "library": "all"
                 }
             ]
+        },
+        {
+            "key": "field_5537a70a5623f",
+            "label": "Tweet",
+            "name": "tweet",
+            "prefix": "",
+            "type": "tweet",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "font_size": 14,
+            "url": ""
         }
     ],
     "location": [
@@ -69,7 +173,5 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": [
-        "the_content"
-    ]
+    "hide_on_screen": ""
 }

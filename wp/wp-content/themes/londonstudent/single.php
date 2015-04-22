@@ -2,8 +2,6 @@
 
 <?php while ( have_posts() ) : the_post(); ?>
 
-
-
 <?php
 	// Author info
 	$authorID = get_the_author_meta('ID');
@@ -85,8 +83,6 @@
 		</li>
 	</ul>
 </section> -->
-
-
 
 <?php endwhile; ?>
 

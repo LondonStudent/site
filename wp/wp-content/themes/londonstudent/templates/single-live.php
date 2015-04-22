@@ -30,17 +30,30 @@
 		<br>
 		<?php foreach( $repeater as $i => $row ) { ?>
 			<?php
-				$body = $row['body'];
 				$timestamp = $row['time'];
 				$time = date('g:ia', $timestamp);
 				$url = 's-' . $timestamp;
 				$author = $row['author'];
 				$authorName = get_author_fullname($author['ID']);
+				$type = $row['type'];
+				$className = 'liveblog__section liveblog__section--' . $type;
 			?>
-			<section class="liveblog__section">
+			<section class="<?php echo $className; ?>">
 				<a class="anchor-offset" id="s-<?php echo $timestamp; ?>"></a>
 				<a class="liveblog__section__time" href="#<?php echo $url; ?>"><?php echo $time; ?></a><!-- - <span class="liveblog__section__author"><?php echo $authorName; ?></span>-->
-				<?php echo $body; ?>
+
+				<?php if ($type == 'tweet') { ?>
+					<?php foreach( $row['tweets'] as $tweet => $tweett ) { ?>
+						<?php echo $tweett['tweet']; ?>
+					<?php } ?>
+				<?php } else if ($type == 'image') { ?>
+					<?php foreach( $row['images'] as $image) { ?>
+						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['description']; ?>">
+					<?php } ?>
+				<?php } else { ?>
+					<?php echo $row['body']; ?>
+				<?php } ?>
+
 			</section>
 			<hr>
 		<?php } ?>
