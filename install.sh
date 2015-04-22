@@ -20,8 +20,8 @@ sudo service apache2 restart
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 
-sudo cp /conf/000-default.conf /etc/apache2/sites-available/
-# sudo a2ensite londonstudent
+sudo cp /conf/londonstudent.conf /etc/apache2/sites-available/
+sudo a2ensite londonstudent
 
 echo "CREATE DATABASE wordpress" | mysql --user=root --password=root
 mysql --user=root --password=root wordpress < "/db/londonstudent.sql"
