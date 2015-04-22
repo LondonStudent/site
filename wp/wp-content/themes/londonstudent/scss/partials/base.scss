@@ -86,3 +86,10 @@ body {
 	top: -5rem;
 	visibility: hidden;
 }
+
+.page-404 {
+	&__header {
+		text-align: center;
+		font-size: 5rem;
+	}
+}
