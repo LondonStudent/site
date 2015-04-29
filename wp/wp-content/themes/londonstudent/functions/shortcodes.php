@@ -14,6 +14,13 @@ add_shortcode( 'quote', 'quote' );
 
 function youtube( $attributes, $content = null) {
 	$url = $attributes['src'];
+
+	if (strpos($url, 'embed') === false) {
+		parse_str($url, $parsedURL);
+		$videoID = $parsedURL['https://www_youtube_com/watch?v'];
+		$url = 'https://www.youtube.com/embed/' . $videoID;
+	}
+
 	$caption = $attributes['caption'];
 	$html = '';
 	if ($url) {
