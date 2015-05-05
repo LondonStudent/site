@@ -82,10 +82,12 @@ function the_author_fullname($userID) {
 	echo get_author_fullname($userID);
 }
 
-function get_avatar_url($get_avatar){
+/*  COMMENTED THIS OUT COZ IT BROKE THE SITE
+    function get_avatar_url($get_avatar){
     preg_match("/src='(.*?)'/i", $get_avatar, $matches);
     return $matches[1];
 }
+*/
 
 /**
  * Load shortcodes
