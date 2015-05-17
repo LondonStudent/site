@@ -24,11 +24,13 @@
 		</div>
 
 		<a href="/" class="navbar__logo">
-        <img src="http://i.imgur.com/CvS7W3g.png">
+        <img src="<?php echo get_template_directory_uri(); ?>
+/img/ls-logo.svg" alt="<?php echo get_template_directory_uri(); ?>
+/img/ls-logo.png">
         </a>
 
 		<ul class="navbar__right">
-				<li><a href="/tips">Got a tip?</a></li>
+				<li><a href="/tips">Contact Us</a></li>
 		</ul>
 	</nav>
 
