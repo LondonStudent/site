@@ -8,7 +8,7 @@
 	$url = get_author_posts_url($authorID);
 	$fullName = get_author_fullname($authorID);
 	$email = get_the_author_meta('user_email');
-	$avatar = get_avatar_url(get_avatar( $email, '100', 'http://placehold.it/100' ));
+	//$avatar = get_avatar_url(get_avatar( $email, '100', 'http://placehold.it/100' ));
 	$url2 = $fullName;
 ?>
 
