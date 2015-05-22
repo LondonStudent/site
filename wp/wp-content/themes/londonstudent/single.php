@@ -15,8 +15,17 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<?php
-		if (in_category('Liveblog')) {
+		if (in_category('Comment')) {
+			include(locate_template('templates/single-comment.php'));
+		}
+		elseif (in_category('Feature')) {
+			include(locate_template('templates/single-feature.php'));
+		}
+		elseif (in_category('Liveblog')) {
 			include(locate_template('templates/single-live.php'));
+		}
+		elseif (in_category('News')) {
+			include(locate_template('templates/single-news.php'));
 		} else {
 			include(locate_template('templates/single.php'));
 		};
