@@ -25,12 +25,13 @@ $article-padding: 4rem;
 		margin-bottom: 3rem;
 
 		img {
-			width: 100%;
+			width: auto;
+            max-height: 500px;
 		}
 		&__attribution {
 			color: $light-grey;
 			font-size: .8em;
-			text-align: right;
+			text-align: left;
 			font-style: italic;
 
 			a {
@@ -46,6 +47,7 @@ $article-padding: 4rem;
 	&__meta,
 	&__content {
 		// Set max width, too many wpl otherwise
+        max-width: 800px;
 		padding: 0 $article-padding/2;
 		@include breakpoint(medium) {
 			padding: 0 $article-padding;
@@ -102,6 +104,7 @@ $article-padding: 4rem;
 }
 
 .author-card {
+    background-color: darkkhaki;
 	@extend %card;
 	@include row;
 	&__img {
@@ -146,6 +149,7 @@ $article-padding: 4rem;
 }
 
 .article-grid {
+    background-color: orange;
 	@include row;
 	&__item {
 
