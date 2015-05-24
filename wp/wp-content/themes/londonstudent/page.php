@@ -12,7 +12,6 @@
 
 		<h1 class="post__title"><?php the_title(); ?></h1>
 	</header>
-
 	<div class="post__content">
 		<?php the_content(); ?>
 	</div>

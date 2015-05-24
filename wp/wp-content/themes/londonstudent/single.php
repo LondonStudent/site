@@ -12,8 +12,7 @@
 	$url2 = $fullName;
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-	<?php
+    <?php
 		if (in_category('Liveblog')) {
 			include(locate_template('templates/single-live.php'));
 		} else {

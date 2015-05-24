@@ -371,8 +371,7 @@ body {
   transition: 300ms ease all; }
   @media only screen and (min-width: 64.063em) {
     .site-canvas {
-      position: static;
-      display: flex; } }
+      padding-left: 200px; } }
 
 .offcanvas {
   width: 200px;
@@ -670,3 +669,16 @@ section.article-row {
 
 .liveblog__section--tweet iframe {
   margin: 0 auto 1rem auto !important; }
+
+.commentdiv {
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  height: 150px;
+  width: 100%;
+  background-color: #D2232A;
+  z-index: -1; }
+  .commentdiv h1 {
+    color: white;
+    font-size: 1.7em; }
+  .commentdiv h2 {
+    color: white; }

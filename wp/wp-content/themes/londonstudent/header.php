@@ -35,6 +35,14 @@
 	</nav>
 
 <div id="site-canvas" class="site-canvas">
+    <?php
+        if(is_front_page()) {
+            echo "";}
+		elseif(in_category('Comment')) {
+			echo(get_template_part('comment', 'header'));
+		} else {
+            echo "";}
+	?>
 <!-- <div id="site-canvas" class="site-canvas site-canvas--active"> -->
 	<div class="offcanvas">
 		<ul class="sidebar__feed">

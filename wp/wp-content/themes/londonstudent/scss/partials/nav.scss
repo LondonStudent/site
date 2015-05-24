@@ -73,9 +73,7 @@
 	backface-visibility: hidden;
 	transition: 300ms ease all;
 	@include breakpoint(large) {
-		position: static;
-		// transform: none;
-		display: flex;
+        padding-left: $sidebar-width;
 	}
 
 	&--active {
