@@ -52,7 +52,6 @@ body {
 		@include outer-container(90%);
 	}
 	@include breakpoint(large) {
-		padding-left: 15%;
 		transition: 300ms ease all;
 	}
 

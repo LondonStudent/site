@@ -1,4 +1,6 @@
 section.article-row {
+    @include breakpoint(large) {
+    }
     @include outer-container;
     ul.headline {
         font-size: 3em;

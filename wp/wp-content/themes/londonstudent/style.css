@@ -261,7 +261,6 @@ body {
         display: table; } }
   @media only screen and (min-width: 64.063em) {
     .content {
-      padding-left: 15%;
       transition: 300ms ease all; } }
 
 .icon {
@@ -677,8 +676,19 @@ section.article-row {
   width: 100%;
   background-color: #D2232A;
   z-index: -1; }
+  @media only screen and (min-width: 40.063em) {
+    .commentdiv {
+      padding-left: 2em; } }
+  @media only screen and (min-width: 64.063em) {
+    .commentdiv {
+      padding-left: 8em; } }
   .commentdiv h1 {
     color: white;
     font-size: 1.7em; }
+    .commentdiv h1 a {
+      color: black;
+      background-color: white; }
+    .commentdiv h1 a:hover {
+      color: #D2232A; }
   .commentdiv h2 {
     color: white; }
