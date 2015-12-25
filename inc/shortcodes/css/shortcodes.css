@@ -1,0 +1,310 @@
+/**
+ * Shortcodes CSS
+ * @package Alaya_framework
+ * @since 1.0
+
+1. Columns
+2. Member
+3. Skills
+4. MessageBox
+5. Feature item
+6. Toggle
+7. Tabs
+8. Button
+9. Dropcap
+
+*/
+
+/* 1. Columns
+================================================== */
+
+.alaya_column{
+  float:left;
+  margin-right:4%;
+  margin-bottom:2%;
+  position:relative;
+  overflow:hidden;
+}
+.alaya_one_half{width:48%;}
+.alaya_one_third{width:30.66%;}
+.alaya_two_third{width:65.33%;}
+.alaya_one_fourth{width:21.7%;}
+.alaya_two_fourth{width:48%;}
+.alaya_three_fourth{width:74%;}
+.alaya_one_fifth{width:16.8%;}
+.alaya_two_fifth{width:37.6%;}
+.alaya_three_fifth{width:58.4%;}
+.alaya_four_fifth{width:67.2%;}
+.alaya_one_sixth{width:13.33%;}
+.alaya_two_sixth{width:30.66%;}
+.alaya_three_sixth{width:47.99%;}
+.alaya_four_sixth{width:65.33%;}
+.alaya_five_sixth{width:82.67%;}
+.alaya_last{margin-right:0;}
+
+
+/* 2.Member
+================================================== */
+.alaya_member{
+    display:inline-block;
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	margin-bottom:30px;
+	text-align:center;
+}
+.alaya_member .avatar{
+    width:160px;
+	height:160px;
+	margin-bottom:10px;
+	border-radius:50%;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+}
+.alaya_member strong{
+    font-size:18px;
+	display:block;
+}
+.alaya_member em{
+    font-size:14px;
+	display:block;
+	color:#959595;
+	margin:10px 0;
+}
+.alaya_member p{
+    font-size:12px;
+	margin-bottom:5px;
+}
+
+/* 3. Skills
+================================================== */
+.alaya_skills{
+   margin-bottom:20px;
+   width:100%;
+   text-transform:uppercase;
+   font:bold 14px Arial,Gadget, sans-serif;
+}
+.alaya_skills ul,
+.entry .alaya_skills ul{
+   margin:0;
+   padding:0;
+}
+.alaya_skills li{
+   color:#000;
+   margin:5px 0 5px;
+   background:#eee;
+   text-align:right;
+   padding:13px;
+   position:relative;
+}
+.alaya_skills li,.entry .alaya_skills li{
+   list-style:none;
+}
+.alaya_skills li span{
+   color:#fff;
+   float:left;
+   text-align:left;
+   display:block;
+   padding:5px 0;
+   text-indent:10px;
+   position:absolute;
+   top:0;
+   left:0;
+   z-index:0;
+}
+.alaya_skills li em{
+   z-index:2;
+   position:absolute;
+   right:2%;
+   top:5px;
+}
+
+/* 4.MessageBox
+================================================== */
+.alaya_alertbox{
+  padding:10px 20px 10px 40px;
+  margin:0 10px 10px 0;
+  background-repeat:no-repeat;
+  background-position:10px 10px;
+  font-size:12px;
+}
+.alaya_alertbox.notification{
+  background-color:#e7f9d5; 
+  background-image:url(../images/messagebox/notification.png);
+  color:#596b46;
+}
+.alaya_alertbox.question{
+  background-color:#feead0;
+  background-image:url(../images/messagebox/question.png);
+  color:#bc8a48;
+}
+.alaya_alertbox.warning{
+  background-color:#ffe2e2;
+  background-image:url(../images/messagebox/alert.png);
+  color:#ff7676;
+}
+.alaya_alertbox.goodchoice{
+  background-color:#e2f2f5;
+  background-image:url(../images/messagebox/goodchoice.png);  
+  color:#49b1c5;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	.alaya_alertbox{background-size:20px auto;}
+	.alaya_alertbox.notification{background-image:url(../images/messagebox/notification@2x.png);}
+	.alaya_alertbox.question{background-image:url(../images/messagebox/question@2x.png);}
+	.alaya_alertbox.warning{background-image:url(../images/messagebox/alert@2x.png);}
+	.alaya_alertbox.goodchoice{background-image:url(../images/messagebox/goodchoice@2x.png);}
+}
+
+/* 5.Feature items
+================================================== */
+.alaya-feature-item .icon{
+	 width:50%;
+	 height:50px;
+	 display: block;
+	 vertical-align:middle;
+	 text-align:center;
+	 overflow:hidden;
+	 margin:0 auto;
+	 padding-bottom:20px;
+}
+.alaya-feature-item .icon i{
+     font-size:45px;
+}
+.alaya-feature-item .icon img{
+	 max-width:50%;
+     width:auto;
+	 max-height:90px;
+	 height:auto;
+}
+.alaya-feature-item strong{
+	 display:block;
+     font-size:18px;
+	 font-weight:normal;
+	 margin-bottom:10px;
+	 letter-spacing:0;
+}
+.alaya-feature-item,.alaya_features .columns{
+     text-align:center;
+     margin:0 25px 0px 0;
+	 font-size:12px;
+}
+
+/* 6. Toggle
+================================================== */
+.alaya_toggle{
+   margin-bottom:10px;
+   height:auto;
+   overflow:hidden;
+}
+.alaya_toggle .alaya_toggle_title{
+   line-height:22px;
+   padding:10px 10px 10px 10px;
+   font-weight:bold;
+   cursor:pointer;
+   border:2px solid #ddd;
+}
+.alaya_toggle .alaya_toggle_title i{
+   margin-right:10px;
+}
+.alaya_toggle .alaya_toggle_content{
+   padding:10px;
+   border:2px solid #ddd;
+   border-top:0;
+   font-size:13px;
+}
+.alaya_toggle .alaya_toggle_content.off{
+   display:none;
+}
+
+/* 7. Tab
+================================================== */
+.alaya_tab_box{
+   margin-bottom:20px;
+}
+.alaya_tab_box .alaya_tab_items ul{
+   margin:0;
+   padding:0;
+}
+.alaya_tab_box .alaya_tab_items li{
+   list-style:none;
+   position:relative;
+}
+.alaya_tab_box .alaya_tab_items li a{
+   height:45px;
+   line-height:45px;
+   padding:0 10px;
+   text-align:center;
+   display:block;
+   float:left;
+   margin:0 -2px 0 0;
+   border:2px solid #ccc;
+   border-bottom:none;
+   color:#aaa;
+   text-decoration: none;
+}
+.alaya_tab_box .alaya_tab_items li.alaya_cur a{
+   font-weight:bold;
+   margin-bottom:-5px;
+   z-index:2;
+   height:47px;
+   line-height:47px;
+   border:2px solid #ccc;
+   border-bottom:none;
+   background:#fff;
+   color:#666;
+}
+.alaya_tab_box .alaya_tab_content{
+   clear:both;
+   border:2px solid #ccc;
+   padding:20px;
+}
+
+/* 8. Button
+================================================== */
+.alaya_small_btn{
+    min-width:50px;
+	padding:5px 8px;
+	font-size:12px;
+}
+.alaya_large_btn{
+    min-width:100px;
+	padding:10px;
+	font-size:18px;
+}
+.alaya_largex_btn{
+    min-width:150px;
+	padding:20px;
+	font-size:28px;
+}
+.alaya_small_btn,
+.alaya_large_btn,
+.alaya_largex_btn{
+	font-weight:bold;
+	text-align:center;
+	margin:0 5px 5px 0;
+	width:auto;
+	display:inline-block;
+}
+.social_icons{
+  text-align:center;
+  margin:10px 0;
+}
+.social_icons.small-size{font-size:1.6rem;}
+.social_icons.big-size{font-size:2.4rem;}
+
+/* 9. Dropcap
+================================================== */
+.alaya_dropcap {
+	float: left;
+	margin: -5px 10px 0 0;
+	font: bold 36px Georgia, "Times New Roman", Times, serif;
+}
+
+/* 10. Heading
+================================================== */
+h2.alaya_heading,
+h3.alaya_heading,
+h4.alaya_heading{
+	margin:60px 0;
+}

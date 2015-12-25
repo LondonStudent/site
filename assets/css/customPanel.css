@@ -1,0 +1,67 @@
+/*--------------------------------------------------------*/
+/* Custom Panel
+/*--------------------------------------------------------*/
+#customPanel{
+   position:fixed;
+   top:60px;
+   right:-210px;
+   width:190px;
+   height:120px;
+   padding-left:20px;
+   padding-top:10px;
+   background:#000;
+   z-index:999;
+}
+#customPanel a{
+   padding:4px 10px;
+   background:#333;
+   color:#ddd;
+}
+#customPanel #button{
+   cursor:pointer;
+   float:left;
+   background:#000;
+   color:#fff;
+   width:60px;
+   height:28px;
+   text-align:center;
+   padding-top:8px;
+   margin:40px 0 -28px -48px;
+   text-indent:-14px;
+   border-radius:20px;
+   font-size:20px;
+}
+#customPanel h3{
+   color:#fff;
+   border-bottom:1px solid #222;
+   margin-bottom:10px;
+   padding:0 0 10px -10px;
+   font-size:18px;
+}
+#customPanel .item{
+   position:relative;
+   height:auto;
+   margin-bottom:10px;
+   color:#fff;
+   float:left;
+   font-size:12px;
+}
+#customPanel .item .item_title{
+   display:block;
+   margin-bottom:5px;
+}
+#customPanel .picker{
+   display:none;
+   position:absolute;
+   z-index:2;
+   right:200px;
+   top:-10px;
+   background:#000;
+}
+#customPanel input{
+   width:170px;
+   height:10px;
+   border:none;
+   cursor:pointer;
+   margin:2px 0 0 2px;
+}

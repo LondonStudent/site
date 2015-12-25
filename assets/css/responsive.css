@@ -1,0 +1,234 @@
+/*
+ * Responsive CSS	
+ */
+ 
+	/* #Tablet (Portrait)
+	================================================== */
+    @media only screen and (max-width: 1245px) {
+	    #top,
+	    #primary_menu{width:1150px}
+	    
+	    .post.thumbnail_s .thumbnail{width:180px;height:120px;}
+	    .standard_blog_full .post .entry-content, .standard_blog .post .entry-content{font-size:14px;font-size:1.4rem;line-height:1.4em;}	  
+    }
+    
+    @media only screen and (max-width: 1140px) {
+	    .post.thumbnail_s .thumbnail{width:150px;height:100px;}	   
+	    .masonry_channel .channel .post_list li a.thumbnail{width:80px;} 
+    }
+
+    
+    
+    /* Note: Design for a width 1024 Desktop
+	================================================== */
+	@media only screen and (max-width: 1199px) {
+	   #top{height:100px;width:1000px;}
+	   #primary_menu{display:block;width:1000px;}
+	   #primary_menu ul li a{font-size:1.3rem;}  
+	   #primary_menu ul li.logo{
+			width:100px;
+			height:80px;
+			margin:0 20px;
+		}
+		.top_banner{
+	        width:60%;
+	        margin-top:25px;
+	    }
+		
+		.logo{width:100%;}
+
+		.post .thumbnail{
+			max-height:400px;
+		}
+		#popup_window{width:600px;margin-left:-300px;}
+		
+		.three_columns{width: 30%;}
+		
+	    .gallery_widget a{width:29%;height:40px;}
+	    .gallery_widget a img{width:120%;}
+	    .masonry{margin-left:10px;}
+	    #sidebar #s{width:50%;}
+	    #sidebar #searchsubmit{padding:0 20px;}
+	    .scrolling_posts .blog-post{width:32.3%;}
+	    
+	    .cn-slider-container{margin:40px auto 20px;}
+
+        .post.thumbnail_s .thumbnail{width:120px;height:90px;}	 
+        .post.thumbnail_s .entry-title{font-size:1.6rem;} 
+	}
+
+    @media only screen and (max-width: 959px) {
+        #top{height:100px;width:90%;margin:0px auto 50px;}
+        .top_banner{width:50%;margin-top:90px;}
+        #topbar .menu_button.hide{
+            display:block;
+        }
+        #topbar .menu_button_status{
+		    display:block;
+	    }
+	    #topbar .social_icons{
+		    display:none;
+	    }
+       div.logo{
+          display:block;
+          padding-top:65px;
+          margin-bottom:50px;
+       }  
+       .logo a{
+	       width:150px;
+	       height:80px;
+	       margin:0 auto 10px;
+       }
+       
+       #breadcrumbs{border-top-width:1px;margin-top:30px;padding-top:10px;}
+       
+       #primary_menu{display:none;}
+       .post .thumbnail{max-height:300px;}
+	   #top.shrinked .logo{display:none;}
+	   #top.shrinked{height:60px;display:none;}
+	   #top.shrinked .css3-selectbox{margin-top:10px;}
+	   #topbar{position:fixed;display:block;top:0;}
+	   
+	   .contact_content{left:-10px;}
+	   
+	   #popup_window{width:500px;margin-left:-250px;}
+	   #sidebar #s{width:49%;}
+	   #sidebar #searchsubmit{padding:0 10px;}
+	    
+	   .entry-content img{
+			max-width:100%;
+			position: relative;
+			z-index: 3;
+		}
+		.error_404 .search_form{
+			width:300px;
+		}
+		
+		.masonry_blog .post_slider.flexslider, .channel .post_slider.flexslider{
+			height:110px;
+		}
+		
+		.post.thumbnail_s .thumbnail{width:120px;height:100px;}	 
+        .post.thumbnail_s .entry-title{font-size:1.8rem;} 
+        .post.thumbnail_s .entry-body{width:54%;}
+        .post.thumbnail_s .entry-content{display:none;}
+        
+        .scrolling_posts header.horizontal{margin-bottom:20px;}
+        .scrolling_posts header.horizontal h5{font-size:1.5rem;}
+        .scrolling_posts header.horizontal .controlNav{margin-top:-55px;float:none;}
+        
+        .post_list li a.post_title{
+		    font-size:1.2rem;
+	    }
+	    .author_intro{padding:10px;}
+    }
+	
+	/*  #Mobile (Landscape)
+    ================================================== */
+
+    /* Note: Design for a width of 320px */
+    @media only screen and (max-width: 767px) {
+        .cn-slider-container.fullwidth{
+	        height:300px;
+        }
+        .cn-slider-container.fullwidth .swiper-slide .text{
+	        width:50%;
+        }
+        .cn-slider-container.fullwidth .swiper-slide h2{
+	        font-size:2rem;
+	        line-height:20px;
+        }
+        .cn-slider-container.fullwidth .swiper-slide h2 span{
+	        font-size:1.2rem;
+        }
+    
+	    .post .thumbnail{
+			max-height:400px;
+		}
+		.top_banner{display:none;}
+		
+		.logo a span{
+			font-size:4.5rem;
+		}
+		.logo .local_info{
+			padding-left:0;
+		}
+		.header2 .logo{
+			padding-top:30px;
+			text-align: center;
+			float: none;
+            margin: auto;
+		}
+		
+		#bottom_widget .widget{margin-top:40px;}
+		
+		#popup_window h3{font-size:2rem;}
+		#popup_window{width:300px;margin-left:-180px;overflow:hidden;}
+		#popup_window input[type="text"],#popup_window select{width:73%;margin-bottom:10px;}
+		
+		.three_columns,.two_columns{width: 100%;}
+		#footer .footer_menu{text-align: left;}
+		
+		#sidebar #s{width:80%;}
+	    #sidebar #searchsubmit{padding:0 10px;}
+	    
+	    .scrolling_posts .columns6 .blog-post,
+	    .scrolling_posts .columns5 .blog-post,
+	    .scrolling_posts .columns4 .blog-post,
+	    .scrolling_posts .columns3 .blog-post,
+	    .scrolling_posts .columns2 .blog-post{width:100%;margin-bottom:30px;}
+	    
+	    .contact_content,
+	    #slider.map,
+	    #slider.map iframe{height:900px;}
+	    
+	    #breadcrumbs .share{display:none;}
+	    
+	    .post .entry-tools a.morelink{
+		    display:none;
+	    }
+	    .post_slider.flexslider{
+		    height:300px;
+	    }
+	    
+	    .scrolling_posts header.horizontal h5{
+		    font-size:1.8rem;
+	    }
+	    
+	    .post.thumbnail_s .thumbnail,
+	    .post.thumbnail_s .entry-body{
+		    width:100%;
+	    }
+	    .post.thumbnail_s .thumbnail{
+		    margin-bottom:10px;
+	    }
+	    
+	    .error_404 .search_form input{
+			width:80%;
+			margin-bottom:10px;
+		}
+		#footer {width:100%;}
+		#footer .copyright,
+		#footer .footer_menu,
+		#footer ul.footer_menu{width:95%;float:none;}
+		
+		.contact_content{left:-30px;}
+		.contact_content .subheading{width:90%;}
+		.contact-form input, .contact-form textarea{width:85%;}
+		
+		.standard_blog .post .thumbnail iframe,
+		.standard_blog_full .post .thumbnail iframe{
+		    min-height:300px;
+		}
+
+    }
+    
+    /* #Mobile (Portrait)
+    ================================================== */
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (max-width: 480px) {
+	    #popup_window input[type="text"],#popup_window select{width:100%;margin-bottom:10px;}
+	    .archive_title{font-size:3rem;}
+    }

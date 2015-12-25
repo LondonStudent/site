@@ -1,0 +1,14 @@
+/**
+ * Admin CSS 
+ * @Since 1.0
+ */
+ 
+.metabox{
+    position:relative;
+}
+.metabox span{
+    color:#999;
+}
+#widget-8_alaya_blog_posts-__i__,
+#widget-9_alaya_categories-__i__{display:none;}
+.rs-update-notice-wrap{display:none;}

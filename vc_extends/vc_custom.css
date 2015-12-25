@@ -1,0 +1,83 @@
+/**
+ * Custom CSS for Visual Composer
+ *
+ * @package Alaya_framework
+ * @subpackage City News
+ * @since 1.0
+ */
+
+/*Search*/
+.vc_col-sm-2 #s{width:55%;}
+.vc_col-sm-2 #searchsubmit{width:42%;padding:0;}
+.vc_col-sm-3 #s{width:68%;}
+.vc_col-sm-3 #searchsubmit{width:30%;padding:0;}
+
+.vc_toggle_title > h4{font-size:1.6rem;}
+
+/*Heading*/
+.vc_custom_heading{
+	border: 1px solid #000;
+    border-width: 2px 0 1px;
+    margin-bottom: 20px;
+}
+.vc_separator h4{
+    font-size:28px;
+	font-size:2.8rem;
+}
+
+/*List Blog Posts*/
+.vc_col-sm-4 .post.thumbnail_s .thumbnail{width:100px;height:100px;}
+.vc_col-sm-4 .post.thumbnail_s .entry-title{font-size:1.4rem;}
+.vc_col-sm-4 .post.thumbnail_s .entry-content{display:none;}
+.vc_col-sm-4 .post.thumbnail_s .thumbnail .overlay{width:30px;height:30px;margin:-15px 0 0 -15px;}
+.vc_col-sm-4 .post.thumbnail_s .thumbnail .overlay i{font-size:14px;font-size:1.4rem;}
+
+.vc_col-sm-3 .post.thumbnail_s .thumbnail{width:80px;height:80px;}
+.vc_col-sm-3 .post.thumbnail_s .entry-title{font-size:1.3rem;}
+.vc_col-sm-3 .post.thumbnail_s .entry-content,
+.vc_col-sm-3 .post.thumbnail_s .morelink,
+.vc_col-sm-3 .post.thumbnail_s .entry-tools span{display:none;}
+.vc_col-sm-3 .post.thumbnail_s .thumbnail .overlay{width:20px;height:20px;margin:-10px 0 0 -10px;}
+.vc_col-sm-3 .post.thumbnail_s .thumbnail .overlay i{font-size:12px;font-size:1.2rem;}
+@media only screen and (max-width: 1199px) {
+ .vc_col-sm-3 .post.thumbnail_s .entry-body,
+ .vc_col-sm-4 .post.thumbnail_s .entry-body {
+    width:50%;
+ }
+}
+@media only screen and (max-width: 959px) {
+ .vc_col-sm-3 .post.thumbnail_s .thumbnail,
+ .vc_col-sm-4 .post.thumbnail_s .thumbnail,
+ .vc_col-sm-3 .post.thumbnail_s .entry-body,
+ .vc_col-sm-4 .post.thumbnail_s .entry-body {
+    width:100%;
+ }
+ .vc_col-sm-4 .post.thumbnail_s .entry-tools a.morelink{
+	display:none;
+ }
+ .vc_col-sm-3 .masonry_channel .channel .post_list,
+ .vc_col-sm-4 .masonry_channel .channel .post_list,
+ .vc_col-sm-5 .masonry_channel .channel .post_list,
+ .vc_col-sm-6 .masonry_channel .channel .post_list{
+	display:none;
+ }
+ .vc_col-sm-3 .channel .channel_title,
+ .vc_col-sm-4 .channel .channel_title{
+	font-size:1.8rem;
+ }
+}
+@media only screen and (max-width: 767px) {
+ .vc_col-sm-3 .post.thumbnail_s .thumbnail,
+ .vc_col-sm-4 .post.thumbnail_s .thumbnail{
+    height:240px;
+ }
+}
+
+/*Channel*/
+.vc_col-sm-3 .masonry_channel .channel .post_list li a.post_title{font-size:13px;font-size:1.3rem;}
+
+/*Ad*/
+.ad760 img{width:760px;height:auto;}
+@media only screen and (max-width: 760px) {
+	.ad760 img{width:99%;}
+}

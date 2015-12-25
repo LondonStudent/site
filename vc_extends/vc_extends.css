@@ -1,0 +1,12 @@
+.wpb_alaya_blog_template:before,
+.wpb_alaya_sticky_template:before{content:"Template: ";}
+.wpb_alaya_blog_columns:before,
+.wpb_alaya_sticky_columns:before{content:"Columns: ";}
+.wpb_alaya_blog_number:before,
+.wpb_alaya_sticky_number:before{content:"Posts Number: ";}
+.wpb_alaya_blog_category:before,
+.wpb_alaya_sticky_category:before{content:"Category: ";}
+.wpb_alaya_blog_hide_sticky_posts:before{content:"Hide Sticky Posts: ";}
+.wpb_alaya_blog_pagination:before{content:"Pagination: ";}
+.wpb_alaya_blog_orderby:before{content:"Order By: ";}
+.wpb_alaya_blog_categories:before{content:"From Category: "}

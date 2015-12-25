@@ -1,0 +1,30 @@
+/*
+Theme Name: City News Themekiller.com
+Theme URI: http://demo.themevan.com/citynews
+Description: City News is a newspaper style wordpress magazine & news theme developed by ThemeVan.
+Author: ThemeVan
+Author URI:  http://www.themevan.com
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: custom-colors,custom-menu,theme-options,translation-ready
+Version: 1.0
+*/
+
+/*-----------------------------------------------------------------------
+Please reading the following instruction before you want to customize CSS
+-------------------------------------------------------------------------
+
+!!!! Strongly suggest you that don't edit the orignal CSS files in the theme folder, 
+otherwise, you won't upgrade the theme conveniently.
+*/
+
+/*Main CSS*/
+@import url(assets/css/skeleton1200.css);
+@import url(assets/css/reset.css);
+@import url(assets/css/main.css);
+@import url(assets/css/javascript.css);
+@import url(assets/css/font-awesome/css/font-awesome.min.css);
+
+.TK{
+display: none;
+}
