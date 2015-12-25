@@ -6,7 +6,7 @@
  * @subpackage City News
  * @since 1.0
  */
-?>             
+?>
 		<!---Posts-->
 		<?php
 		  $ex_css='';
@@ -28,16 +28,21 @@
 		?>
 		<article <?php post_class($ex_css);?>>
 		<?php echo alaya_format_media($thumbnail,$title,$thumbnail_size);?>
-		
+
 		<div class="entry-body">
 		<?php if($title<>'no'):?>
 		  <span class="category"><?php echo get_the_category_list( ', ' );?></span>
 		  <h4 class="entry-title"><a href="<?php the_permalink();?>" title="<?php the_title();?>"><?php the_title();?></a></h4>
-		  <span class="title-divider"></span>
+<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
+			<p style="text-align:center;"><?php echo $author = get_the_author(); ?>
+	</p>
+		</a>
+
+		<!---<span class="title-divider"></span>-->
 		<?php endif;?>
-		  
+
 		  <div class="entry-content">
-		    <?php 
+		    <?php
 		    if(is_single()){
 		     the_content();
 		     wp_link_pages('before=<div class="page-navi">&after=</div>');
@@ -45,22 +50,22 @@
 			  the_excerpt();
 		    }
 		   ?>
-		    
+
 		    <?php if(is_single()):?>
-		    <?php 
+		    <?php
 			   //Tags
 			   $posttags=get_the_tags();
 			   if($posttags <>''):?>
                <div class="taglist">
                   <i class="fa fa-tag"></i> <?php the_tags('',' '); ?>
-               </div>   
-               <?php endif;?>  
+               </div>
+               <?php endif;?>
             <?php endif;?>
             <div class="clear"></div>
 		  </div>
 		  <footer class="entry-tools">
-		    <span><?php echo get_the_time(get_option('date_format'));?></span>		    
-		    
+		    <span><?php echo get_the_time(get_option('date_format'));?></span>
+
 		    <?php if(!is_single()):?>
 		    <a href="<?php the_permalink();?>" class="morelink"><?php _e('Continue to read','alaya');?> <i class="fa fa-long-arrow-right"></i></a>
 		    <?php elseif(!null==alaya_opt('post_share') && alaya_opt('post_share')==1):
@@ -70,4 +75,3 @@
 		  </footer>
 		 </div>
 		</article>
-

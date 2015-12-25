@@ -190,6 +190,7 @@ function alaya_post_loop( $atts )
 				   <div class="entry-body">
 				   	 <span class="category">%5$s</span>
 				     <h4 class="entry-title"><a href="%1$s" title="%2$s">%2$s</a></h4>
+             <p>the author</p>
 				     <span class="title-divider"></span>
 				     <div class="entry-content">%3$s</div>
 
